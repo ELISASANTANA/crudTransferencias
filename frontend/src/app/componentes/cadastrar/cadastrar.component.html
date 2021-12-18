@@ -1,0 +1,28 @@
+<h3>Realizar transferência</h3>
+
+
+<form class="col">
+  <div class="row">
+    <div class="input-field col s6">
+      <input [(ngModel)]="transferencia.nomeCliente" id="nomeCliente" type="text" class="validate" name="nomeCliente">
+      <label for="last_name">Nome do cliente</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input [(ngModel)]="transferencia.contaCliente" id="contaCliente" type="text" class="validate" name="contaCliente">
+      <label for="last_name">Conta do cliente</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input [(ngModel)]="transferencia.valor" id="valor" type="text" class="validate" name="valor">
+      <label for="valor">Valor da transferência</label>
+    </div>
+  </div>
+  <div class="row">
+    <button (click)="adicionar()" class="waves-effect waves-light btn">Tranferir</button>
+  </div>
+</form>
+
+

@@ -1,0 +1,26 @@
+
+<div class="container">
+  <table class="striped centered">
+    <thead>
+      <tr>
+          <th>ID transferência</th>
+          <th>Nome do Cliente</th>
+          <th>Valor da transferência</th>
+          <th>Conta do cliente</th>
+          <th>Editar</th>
+          <th>Excluir</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor = 'let item of ListarTransferencias'>
+        <td>{{item.id_transferencia}}</td>
+        <td>{{item.nomeCliente}}</td>
+        <td>{{item.valor}}</td>
+        <td>{{item.contaCliente}}</td>
+        <td><button (click)="editar(item.id_transferencia)" type="button" class="waves-effect waves-light btn">Editar</button></td>
+        <td><button (click)="excluir(item.id_transferencia)" type="button" class="waves-effect waves-light btn red darken-2">Excluir</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
